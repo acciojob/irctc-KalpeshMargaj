@@ -94,6 +94,15 @@ public class TicketService {
                 break;
             }
         }
+        for(int i = 0; i<results.length;i++)
+        {
+
+            if(results[i].equals(bookTicketEntryDto.getToStation().toString()))
+            {
+                endIndex= i;
+                break;
+            }
+        }
 
         if(startIndex== -1 || endIndex == -1)
         {
