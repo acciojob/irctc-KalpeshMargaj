@@ -23,10 +23,10 @@ public class BookTicketEntryDto {
 
     public BookTicketEntryDto(List<Integer> passengerIds, Integer trainId, Station fromStation, Station toStation,int noOfSeats,Integer bookingPersonId) {
         this.passengerIds = passengerIds;
+        this.noOfSeats = noOfSeats;
         this.trainId = trainId;
         this.fromStation = fromStation;
         this.toStation = toStation;
-        this.noOfSeats = noOfSeats;
         this.bookingPersonId = bookingPersonId;
     }
 
